@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="CONFIG APP"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#111111" />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="12dp"
+        android:text="Menu principal"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Início"
+            android:textSize="11sp"
+            android:drawableTop="@android:drawable/ic_menu_view" />
+
+        <Button
+            android:id="@+id/btn_perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Perfil"
+            android:textSize="11sp"
+            android:drawableTop="@android:drawable/ic_menu_myplaces" />
+
+        <Button
+            android:id="@+id/btn_config"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Configurações"
+            android:textSize="11sp"
+            android:drawableTop="@android:drawable/ic_menu_preferences" />
+
+        <Button
+            android:id="@+id/btn_seguranca"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Segurança"
+            android:textSize="11sp"
+            android:drawableTop="@android:drawable/ic_lock_lock" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
